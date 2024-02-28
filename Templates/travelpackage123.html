@@ -1,0 +1,23 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body
+{% block body %}
+<div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'Images/kl.jpeg' %}" class="card-img-top" alt="hello">
+        <div class="card-body">
+            <h5 class="card-title">WELCOME TO KLUNIVERSITY</h5>
+            <p class="card-text">KLUNIVERSITY 2-2 FSD sec11</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

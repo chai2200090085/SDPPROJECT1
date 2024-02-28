@@ -1,0 +1,48 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+<html>
+<html lang="en">
+{% block body %}
+<style>
+  /* Add custom CSS to remove margin/padding between cards and navbar */
+  .navbar {
+    margin-bottom: 0; /* Remove the default margin-bottom of the navbar */
+  }
+
+  .d-flex.flex-row {
+    margin-top: 20px; /* Add some top margin between navbar and cards (adjust as needed) */
+  }
+
+  .card {
+    margin-right: 10px; /* Add some right margin between cards (adjust as needed) */
+  }
+</style>
+
+<div class="d-flex flex-row">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/car1.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mg Gloster</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/car2.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">MG Hector</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/car3.jpeg' %}"class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lamborghini</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+</html>
